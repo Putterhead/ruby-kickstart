@@ -8,6 +8,9 @@
 # arithmeitc1(10.5)   # => 32.5
 # arithmeitc1(-6)     # => -50
 
+# require "spec_helper"
+
 def arithmetic1(n)
-  # the code for this method goes in here
+  n * 5 - 20# the code for this method goes in here
 end
+
