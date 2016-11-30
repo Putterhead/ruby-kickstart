@@ -10,4 +10,41 @@
 # grade(15, true)   # => "B"
 
 def grade(num_books, reads_books)
+  #grade = ["A", "B", "C", "D"]
+  if reads_books
+    return "C" if num_books < 10
+    return "B" if num_books <= 20
+    return "A"
+  else 
+    return "D" if num_books < 10
+    return "C" if num_books <= 20
+    return "B"
+  end 
+  # num_books == 0 ? "D"
+  # num_books < 10 ? "D" : "C"
+  # num_books <= 20 ? "C" : "B"
+  #   "C" if reads_books < 10
+  #   "B" if reads_books <= 20
+  #   "A"
+  # else
+  #   "D" if num_books < 10
+  #   "C" if num_books <= 20
+  #   "B"
+  # end
+  #num_books < 10 && reads_books == num_books ? "C" : "D"
+    #"D"
+  # num_books >= 10 && num_books <=20 && reads_books == num_books ? "B" : "C"
+  # #elsif num_books >= 10 && num_books <= 20
+  #   #"C"
+  # num_books > 20 && reads_books == num_books ? "A" : "B"
+  # num_books == 0 ? "D" : "D"
+  #elsif num_books > 20
+    #"B"
+  #num_books >= 10 < 20 : "C"
+  #num_books > 20 ? : "B" : grade[-1]
+  #end
 end
+
+# array = [1,5,7]
+# array.find { |number| number * 2 == 10 } # => 5
+# array.find { |number| number * 2 == 11 } # => nil
