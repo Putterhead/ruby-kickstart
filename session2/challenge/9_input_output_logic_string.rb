@@ -23,10 +23,30 @@
 # GRANDMA:  HUH?! SPEAK UP, SONNY!
 # USER:     BYE
 
+
+  # speak = ()
+  # while speak != 'BYE'
+  #   speak = gets.chomp
+  #   if speak != speak.upcase 
+  #     puts "HUH?! SPEAK UP, SONNY!"
+  #   else 
+  #   puts "NO, NOT SINCE 1938!"
+  #   end
+  # end
+ # So although mine didnt work, I still think it works
+ # ok for a first attempt.
+ 
 def deaf_grandma
-
+  while line = gets
+    line.chomp!
+    break if line == "BYE"
+    if line == line.upcase && line != ""
+      puts "NO, NOT SINCE 1938!"
+    else
+      puts "HUH?! SPEAK UP, SONNY!"
+    end
+  end
 end
-
 
 
 
