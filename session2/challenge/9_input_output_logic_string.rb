@@ -30,12 +30,12 @@
   #   if speak != speak.upcase 
   #     puts "HUH?! SPEAK UP, SONNY!"
   #   else 
-  #   puts "NO, NOT SINCE 1938!"
+  #     puts "NO, NOT SINCE 1938!"
   #   end
   # end
  # So although mine didnt work, I still think it works
  # ok for a first attempt.
- 
+
 def deaf_grandma
   while line = gets
     line.chomp!

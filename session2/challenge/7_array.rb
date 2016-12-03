@@ -11,13 +11,13 @@
 
 # So I'm thinking some sort of evaluation with .select.odd? and 
 # maybe a regex to ignore the characters that should not
-# be considered
-def every_second(string)
-  to_return = []
-  string.each_with_index do |string, idx|
-    to_return << string if idx % 2 == 0  
-end
-to_return
+# # be considered
+# def every_second(string)
+#   to_return = []
+#   string.each_with_index do |string, idx|
+#     to_return << string if idx % 2 == 0  
+# end
+# to_return
 # My error says 'unexpected end-of-input, expecting keyword_end' but really
 # I was just trying to get a result that I could then work with
 
