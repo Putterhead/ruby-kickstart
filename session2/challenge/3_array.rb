@@ -16,10 +16,14 @@
 #   end
 # end
 
+# When looking at the solution, I found that # so I found that .each_char 
+# passes each character in to_return to the block, which I think in turn 
+# is evaluating the index of each char, and any char that are even are 
+# being pushed to 'to_return' 
 class String
   def every_other_char
     to_return = ''
-    each_char.with_index do |char, index|
+    each_char.with_index do |char, index| 
       to_return << char if index.even?
     end
     to_return
