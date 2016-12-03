@@ -21,8 +21,27 @@
 # f.to_f               # => 0.5
 
 class Fraction
+  attr_accessor :numerator, :denominator # setter methods allowing input
+
+  def initialize(numerator, denominator)
+    self.numerator, self.denominator = numerator, denominator
+  end 
+
+  def to_s
+    "#{numerator}/#{denominator}" # represents the fraction as a string
+  end
+
+  def to_f
+    numerator / denominator.to_f # returns the ratio as a float
+  end 
+
   def gcd(a,b)
     return a if b == 0
-    gcd(b, a%b)
+    gcd b, (a % b)
+  end
+
+  def lowest
+    divisor = gcd(numerator, denominator)
+    Fraction.new(numerator/divisor, denominator/divisor)
   end
 end
